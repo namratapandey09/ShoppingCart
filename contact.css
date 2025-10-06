@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffaf7;
+  color: #333;
+  padding-top: 80px;
+}
+
+.contact-section {
+  padding: 50px 20px;
+  max-width: 600px;
+  max-height: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #666;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  resize: none;
+}
+
+button[type="submit"] {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #e65c00;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 30px 15px;
+  }
+}
+.popup-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background:  #ff8800;
+  color: black;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-size: 16px;
+  z-index: 9999;
+  animation: fadeIn 0.4s ease;
+}
+
+.popup-message strong {
+  font-weight: bold;
+}
+
+.popup-message .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; top: 0; }
+  to { opacity: 1; top: 20px; }
+}

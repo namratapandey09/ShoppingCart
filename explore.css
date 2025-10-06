@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffaf7;
+  color: #333;
+  padding-top: 80px;
+}
+
+.container {
+  flex: 1; 
+  padding: 50px 60px;
+}
+
+.section-header h1,
+.section-heading {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.section-heading {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.dress-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.dress-card {
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.dress-card:hover {
+  transform: translateY(-5px);
+}
+
+.dress-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.dress-card .text {
+  padding: 15px;
+  text-align: center;
+}
+
+.dress-card .text p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.dress-card .stars {
+  color: #ffcc00;
+  margin-bottom: 5px;
+}
+
+.dress-card h2 {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.explore-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.explore-btn:hover {
+  background-color: #e65c00;
+}
+
+.tag {
+  background-color: #ff6600;
+  color: white;
+  padding: 2px 8px;
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 4px;
+}
+
+.reviews {
+  background-color: #fff3ea;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.reviews h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.review-box {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-left: 5px solid #ff6600;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.review-box p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.review-box h4 {
+  color: #444;
+  font-weight: 600;
+}
+
+
+footer {
+  position: absolute;
+  margin-top: auto;
+  width: 100%;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .dress-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    padding: 30px 20px;
+  }
+}
